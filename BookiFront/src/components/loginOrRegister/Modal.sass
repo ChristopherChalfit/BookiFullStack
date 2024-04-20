@@ -1,0 +1,33 @@
+#modal 
+    display: block
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(0, 0, 0, 0.5)
+    z-index: 10
+.modal
+    &--content
+        background-color: white
+        padding: 20px
+        border-radius: 5px
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        display: flex
+        flex-direction: column
+        align-items: center
+        max-height: 400px
+        overflow: auto
+        width: 50%
+    &--choice
+        display: flex
+        flex-direction: row
+        gap: 16rem
+    &--login
+        gap: 1rem
+    &--login,&--form
+        display: flex
+        flex-direction: column
